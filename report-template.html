@@ -8,31 +8,28 @@
     <!--<script src="script.js"></script>-->
   </head>
   <body>
-    <div id='page'>
-      <nav>
-
-      </nav>
-      <div id="sidebar">
-        <img src="resources\logo.png" />
-        <ul class='fa-ul'>
-          <li><i class="fa-li fa fa-home"></i>Dashboard</li>
-          <li><i class="fa-li fa fa-history"></i>Pending Receipts</li>
-          <li><i class="fa-li fa fa-archive"></i>Receipt History</li>
-          <li><i class="fa-li fa fa-search"></i>Report Template</li>
-          <li><i class="fa-li fa fa-bell"></i>Notifications</li>
-          <li><i class="fa-li fa fa-times"></i>Logout</li>
-        </ul>
-      </div>
-      <main>
-        <header>
-          <p>
-            Hello, welcome %NAME
-          </p>
-          <p>
-            Dashboard / Report Template
-          </p>
-        </header>
-      </main>
+    <body>
+      <div id='page'>
+        <div id="mySidenav" class="sidenav">
+          <img src="resources\logo.png" class="logo"/>
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="#"><i class="fa fa-fw fa-home"></i>Dashboard</a>
+          <a href="#"><i class="fa fa-fw fa-history"></i>Pending Receipts</a>
+          <a href="#"><i class="fa fa-fw fa-archive"></i>Receipt History</a>
+          <a href="#"><i class="fa fa-fw fa-search"></i>Report Template</a>
+          <a href="#"><i class="fa fa-fw fa-bell"></i>Notifications</a>
+          <a href="#"><i class="fa fa-fw fa-times"></i>Logout</a>
+        </div>
+        <div id="main">
+          <nav>
+            <div class="navbar">
+              <a href="#" class="left"><span onclick="openNav()">&#9776;</span></a>
+              <a href="#" class="right">%NAME</a>
+              <a href="#" class="right"><i class="fa fa-fw fa-envelope"></i></a>
+              <a href="#" class="right"><i class="fa fa-fw fa-bell"></i></a>
+            </div>
+          </nav>
+          <main>
     </div>
   </body>
 </html>
