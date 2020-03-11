@@ -1,7 +1,7 @@
 /* The side navigation menu */
 .sidenav {
   height: 100%; /* 100% Full-height */
-  width: 0; /* 0 width - change this with JavaScript */
+  width: 250px; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
@@ -41,6 +41,7 @@
   transition: margin-left .5s;
   padding: 20px;
   background-color: #F8F9FE;
+  margin-left: 250px;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
@@ -106,6 +107,10 @@
   background-color: #f1f1f1;
 }
 
+#myTable th{
+  background-color: white;
+}
+
 section{
   background-color: white;
   width: 40%;
@@ -117,4 +122,8 @@ section{
 .notificationBox{
   width: 30%;
   height: 137px;
+}
+
+#main h2{
+  font-size: 18px;
 }
