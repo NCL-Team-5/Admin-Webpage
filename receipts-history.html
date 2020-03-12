@@ -5,34 +5,91 @@
     <title>Receipt History</title>
     <link rel="stylesheet" href="saggezza-style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="receipts-history.css">
     <!--<script src="script.js"></script>-->
   </head>
   <body>
     <div id='page'>
-      <nav>
-
-      </nav>
-      <div id="sidebar">
-        <img src="resources\logo.png" />
-        <ul class='fa-ul'>
-          <li><i class="fa-li fa fa-home"></i>Dashboard</li>
-          <li><i class="fa-li fa fa-history"></i>Pending Receipts</li>
-          <li><i class="fa-li fa fa-archive"></i>Receipt History</li>
-          <li><i class="fa-li fa fa-search"></i>Report Template</li>
-          <li><i class="fa-li fa fa-bell"></i>Notifications</li>
-          <li><i class="fa-li fa fa-times"></i>Logout</li>
-        </ul>
+      <div id="mySidenav" class="sidenav">
+        <img src="resources\logo.png" class="logo"/>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#"><i class="fa fa-fw fa-home"></i>Dashboard</a>
+        <a href="#"><i class="fa fa-fw fa-history"></i>Pending Receipts</a>
+        <a href="#"><i class="fa fa-fw fa-archive"></i>Receipt History</a>
+        <a href="#"><i class="fa fa-fw fa-search"></i>Report Template</a>
+        <a href="#"><i class="fa fa-fw fa-bell"></i>Notifications</a>
+        <a href="#"><i class="fa fa-fw fa-times"></i>Logout</a>
       </div>
-      <main>
-        <header>
-          <p>
-            Hello, welcome %NAME
-          </p>
-          <p>
-            Dashboard / Receipt History
-          </p>
-        </header>
-      </main>
+      <div id="main">
+        <nav>
+          <div class="navbar">
+            <a href="#" class="left"><span onclick="openNav()">&#9776;</span></a>
+            <a href="#" class="right">%NAME</a>
+            <a href="#" class="right"><i class="fa fa-fw fa-envelope"></i></a>
+            <a href="#" class="right"><i class="fa fa-fw fa-bell"></i></a>
+          </div>
+        </nav>
+        <main>
+          <header>
+            <p>
+              Hello, welcome %NAME<span class="right">Dashboard / Receipts History</span>
+            </p>
+         </header>
+          <section id='receipts-history'>
+            <h2>Receipts History</h2>
+            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search">
+            <table id="myTable">
+              <tr class="tableHeader">
+                <th style="width:25%;">#</th>
+                <th style="width:25%;">Employee ID</th>
+                <th style="width:25%;">Date</th>
+                <th style="width:25%;">Status</th>
+              </tr>
+              <tr>
+                <td>1234</td>
+                <td>1234</td>
+                <td>01/01/01</td>
+                <td>Done</td>
+              </tr>
+            </table>
+
+          </section>
+          
+        </main>
+      </div>
+      <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+        }
+
+        function myFunction() {
+        // Declare variables
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("myTable");
+        tr = table.getElementsByTagName("tr");
+
+        // Loop through all table rows, and hide those who don't match the search query
+        for (i = 0; i < tr.length; i++) {
+          td = tr[i].getElementsByTagName("td")[0];
+          if (td) {
+            txtValue = td.textContent || td.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+             tr[i].style.display = "";
+            } else {
+             tr[i].style.display = "none";
+            }
+          }
+        }
+      }
+      </script>
     </div>
   </body>
 </html>
