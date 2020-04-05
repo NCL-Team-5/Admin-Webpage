@@ -42,6 +42,7 @@
   padding: 20px;
   background-color: #F8F9FE;
   margin-left: 250px;
+  height: 881px;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
@@ -72,4 +73,83 @@
 
 .right {
   float: right;
+}
+
+/* The alert message box */
+.notificationBox {
+  padding: 5px;
+  background-color: white;
+  color: black;
+  margin-bottom: 15px;
+  opacity: 1;
+  transition: opacity 0.6s; /* 600ms to fade out */
+  float: left;
+  margin: 5px;
+}
+
+/* The alert message box */
+.deadlineBox {
+  padding: 5px;
+  background-color: white;
+  color: black;
+  margin-bottom: 15px;
+  opacity: 1;
+  transition: opacity 0.6s; /* 600ms to fade out */
+  float: left;
+  margin: 5px;
+}
+
+/* The close button */
+.closebtn {
+  margin-left: 15px;
+  color: #C7C6D0;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+  color: black;
+}
+
+.sidePannelNew {
+  height: 100%;
+  float: left;
+  width: 10px;
+  background-color: aqua;
+}
+
+.sidePannelDeadline {
+  height: 100%;
+  float: left;
+  width: 10px;
+  background-color: #DA007E;
+}
+
+.notificationBox p {
+  text-align: center;
+}
+
+.DeadlineBox p {
+  text-align: center;
+}
+
+.notificationBox h3 {
+  text-align: center;
+}
+
+.deadlineBox h3 {
+  text-align: center;
+}
+
+.notificationBox i {
+  color: aqua;
+}
+
+.deadlineBox i {
+  color: #DA007E;
 }
