@@ -8,18 +8,19 @@
     <link rel="stylesheet" href="home.css">
     <script src="nav-script.js"></script>
     <script src="notification.js"></script>
+    <script src="table.js"></script>
   </head>
   <body>
     <div id='page'>
       <div id="mySidenav" class="sidenav">
         <img src="resources\logo.png" class="logo"/>
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#"><i class="fa fa-fw fa-home"></i>Dashboard</a>
-        <a href="#"><i class="fa fa-fw fa-history"></i>Pending Receipts</a>
-        <a href="#"><i class="fa fa-fw fa-archive"></i>Receipt History</a>
-        <a href="#"><i class="fa fa-fw fa-search"></i>Report Template</a>
-        <a href="#"><i class="fa fa-fw fa-bell"></i>Notifications</a>
-        <a href="#"><i class="fa fa-fw fa-times"></i>Logout</a>
+        <a href="home.html"><i class="fa fa-fw fa-home"></i>Dashboard</a>
+        <a href="pending-receipts.html"><i class="fa fa-fw fa-history"></i>Pending Receipts</a>
+        <a href="receipts-history.html"><i class="fa fa-fw fa-archive"></i>Receipt History</a>
+        <a href="report-template.html"><i class="fa fa-fw fa-search"></i>Report Template</a>
+        <a href="notifications.html"><i class="fa fa-fw fa-bell"></i>Notifications</a>
+        <a href="login.html"><i class="fa fa-fw fa-times"></i>Logout</a>
       </div>
       <div id="main">
         <nav>
@@ -69,7 +70,7 @@
                 <td>1234</td>
                 <td>1234</td>
                 <td>01/01/01</td>
-                <td>Done</td>
+                <td id="Done">Done</td>
               </tr>
             </table>
           </section>
@@ -77,15 +78,27 @@
             <h2>Notifications</h2>
             <div class="notificationBox">
               <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-              This is an alert box.
+              <div class="sidePannelNew"></div>
+              <h3><i class="fa fa-fw fa-bell"></i>New Pending Reciept</h3>
+              <p>Reciept needs approval</p>
+            </div>
+            <div class="deadlineBox">
+              <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+              <div class="sidePannelDeadline"></div>
+              <h3><i class="fa fa-fw fa-bell"></i>Receipt Deadline</h3>
+              <p>Deadline in 2 weeks</p>
             </div>
             <div class="notificationBox">
               <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-              notif
+              <div class="sidePannelNew"></div>
+              <h3><i class="fa fa-fw fa-bell"></i>New Pending Reciept</h3>
+              <p>Reciept needs approval</p>
             </div>
-            <div class="notificationBox">
+            <div class="deadlineBox">
               <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-              notif
+              <div class="sidePannelDeadline"></div>
+              <h3><i class="fa fa-fw fa-bell"></i>Receipt Deadline</h3>
+              <p>Deadline in 2 weeks</p>
             </div>
           </section>
         </main>

@@ -87,6 +87,18 @@
   margin: 5px;
 }
 
+/* The alert message box */
+.deadlineBox {
+  padding: 5px;
+  background-color: white;
+  color: black;
+  margin-bottom: 15px;
+  opacity: 1;
+  transition: opacity 0.6s; /* 600ms to fade out */
+  float: left;
+  margin: 5px;
+}
+
 /* The close button */
 .closebtn {
   margin-left: 15px;
@@ -104,3 +116,40 @@
   color: black;
 }
 
+.sidePannelNew {
+  height: 100%;
+  float: left;
+  width: 10px;
+  background-color: aqua;
+}
+
+.sidePannelDeadline {
+  height: 100%;
+  float: left;
+  width: 10px;
+  background-color: #DA007E;
+}
+
+.notificationBox p {
+  text-align: center;
+}
+
+.DeadlineBox p {
+  text-align: center;
+}
+
+.notificationBox h3 {
+  text-align: center;
+}
+
+.deadlineBox h3 {
+  text-align: center;
+}
+
+.notificationBox i {
+  color: aqua;
+}
+
+.deadlineBox i {
+  color: #DA007E;
+}
