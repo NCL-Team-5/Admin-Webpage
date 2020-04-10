@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Help</title>
+    <link rel="stylesheet" href="saggezza-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="nav-script.js"></script>
+  </head>
+  <body>
+    <body>
+      <div id='page'>
+        <div id="mySidenav" class="sidenav">
+          <img src="resources\logo.png" class="logo"/>
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="home.html"><i class="fa fa-fw fa-home"></i>Dashboard</a>
+          <a href="pending-receipts.html"><i class="fa fa-fw fa-history"></i>Pending Receipts</a>
+          <a href="receipts-history.html"><i class="fa fa-fw fa-archive"></i>Receipt History</a>
+          <a href="report-template.html"><i class="fa fa-fw fa-search"></i>Report Template</a>
+          <a href="notifications.html"><i class="fa fa-fw fa-bell"></i>Notifications</a>
+          <a href="login.html"><i class="fa fa-fw fa-times"></i>Logout</a>
+        </div>
+        <div id="main">
+          <nav>
+            <div class="navbar">
+              <a href="#" class="left"><span onclick="openNav()">&#9776;</span></a>
+              <a href="#" class="right">%NAME</a>
+              <a href="#" class="right"><i class="fa fa-fw fa-envelope"></i></a>
+              <a href="#" class="right"><i class="fa fa-fw fa-bell"></i></a>
+            </div>
+          </nav>
+          <main>
+            <header>
+              <p>
+                Hello, welcome %NAME<div class="right">Dashboard / Help</div>
+              </p>
+           </header>
+           <div>
+             <h3>Contents</h3>
+             <ul>
+               <li><a href='#your-expenses-dashboard'>Your Expenses Dashboard</a></li>
+               <li><a href='#view-approve-deny'>Viewing, Approving and Denying Reports</a></li>
+               <li><a href='#edit-template'>Editing the report template</a></li>
+               <li><a href='#other-features'>Other features</a></li>
+             </ul>
+             <div id='your-expenses-dashboard'>
+               <h3>Your Expenses Dashboard</h3>
+               <p>
+                 Welcome to your expensing control panel - everything you need to manage and revolutionise the way your employees submit their expenses. This website is used to oversee and manage the actions your employees can take using our bespoke expense reporting app, through which expense reports can be submitted alongside receipts and other evidence to digitise and simplify the way Saggezza employees can be reimbursed for their expenses.
+               </p>
+               <p>
+                 After logging in with your Saggezza GMail account using the Google SSO service, you will be presented with the Dashboard - your operations centre for managing expense reports. This dashboard consists of three main information boxes to give you a concise overview of the most immediately relevant information.
+               </p>
+               <p>
+                 <b>Navigating the website</b> - from the dashboard, other pages can be accessed by clicking the relevant button on the side navigation panel. This navigation panel can also be collapsed if you wise to use the entire page to display information.
+               </p>
+               <p>
+                 <b>Pending receipts</b> - this gives you a rundown of receipts that have been submitted by your employees, now subject to your approval before being handed off to payroll management. At a glance you can see the receipt id, employee id, date of report and status of this report. These reports are ordered by date, ensuring that you see the newest reports as they appear.
+               </p>
+               <p>
+                 <b>Notifications</b> - to the right of the dashboard, these notifications alert you to the newest items requiring your attention, be they new pending receipts, or reminders of deadlines for payroll information. These notifications are also colour coded to allow you to quickly identify pertinent alerts and keep you up to speed with the latest updates.
+               </p>
+               <p>
+                 <b>Receipts history</b> - found underneath the pending receipts section, this box gives you a rundown on reports that have been previously submitted and actioned, with an indication of whether they were approved or denied. As before this will give you at a glance information such as the employee id and date of submission for a given report. The status of the report is also colour coded to allow you to quickly identify a pertinent report.
+               </p>
+             </div>
+             <div id='view-approve-deny'>
+               <h3>Viewing, Approving and Denying Reports</h3>
+               <p>
+                 After navigating from the Dashboard to the Pending Receipts page, you will be presented with an expanded version of the corresponding box from the Dashboard, in which all pending reports will be shown.
+               </p>
+               <p>
+                 <b>Selecting a report</b> - the list of pending reports can be ordered in several ways to facilitate you finding the most relevant reports as quickly as possible. By clicking the heading of a given column in the table, you will reorder the list by the values of that table  - click once to order by ascending, again to reorder by descending, and once again to return to normal. By default, the list will be ordered by date with the newest reports shown at the top.
+               </p>
+               <p>
+                 <b>Actioning a report</b> - once you have selected a given report, you can then view it's contents; the amounts being claimed, with their descriptions, justifications and supporting evidence such as receipts and attached emails. This information will facilitate you to make the decision as to either approve the report, sending it to payroll management, or denying it, returning it to the employee such that they can fill in missing fields or provide absent evidence as needed. Once you are ready to make a decision on a given report, simply click the large 'approve' or 'deny' buttons at the bottom of the page - this will then confirm your action and return you to the Pending Receipts page.
+               </p>
+             </div>
+             <div id='edit-template'>
+               <h3>Editing the Report Template</h3>
+               <p>
+                 In order to facilitate the expedient creation and submission of expense reports for your employees, a template system is provided. This gives a framework and structure for a report, allowing them to fill in the relevant information that you need to be able to approve and pay a report. Users of the app can also save previous reports and use them in the future so that repeat information does not need to be re-entered. This page gives you the ability to edit the fields of the template, allowing you to update it as the needs of the company change.
+               </p>
+               <p>
+                 Once you navigate to this page, you will be presented with a list of columns that form an expense report. By clicking on one of these, you will be presented with a current list of options that a user creating a report on the app will be presented with. Here you can also select 'add new option' to create a new option for a given column, or click the small bin button to remove it.
+               </p>
+               <p>
+                 As an example, if it became beneficial to have a category for Road Tolls seperate to the general Travel category, this could be created by clicking the 'Category' column, and entering this as a new field. Once you have made all of your changes, click the 'Confirm Changes' button at the bottom right of the screen. This will ask you to confirm once again, and then redirect you back to the initial Report Template page.
+               </p>
+             </div>
+             <div id='other-features'>
+               <h3>Other Features</h3>
+               <p>
+                 Just as with the app, your Saggezza GMail account is used to securely log in to the web portal, via the Google SSO. This secures the website and ensures that only Saggezza employees with the appropriate priveleges can access report and receipt data from other employees, edit the template and approve/deny reports. Clicking the 'Logout' button on the side navigation will log you out and return you to the sign in screen, should you need to let another user log in to the web panel.
+               </p>
+               <br />
+             </div>
+           </div>
+          </main>
+    </div>
+  </body>
+</html>
