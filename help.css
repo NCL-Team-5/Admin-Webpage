@@ -1,0 +1,11 @@
+.sc {
+  max-width: 300px;
+  height: auto;
+  left: 500px;
+  margin: 50px;
+}
+
+.box {
+  position: relative;
+  display: block;
+}
