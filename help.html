@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Help</title>
     <link rel="stylesheet" href="saggezza-style.css">
+    <link rel="stylesheet" href="help.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="nav-script.js"></script>
   </head>
@@ -18,6 +19,7 @@
           <a href="receipts-history.html"><i class="fa fa-fw fa-archive"></i>Receipt History</a>
           <a href="report-template.html"><i class="fa fa-fw fa-search"></i>Report Template</a>
           <a href="notifications.html"><i class="fa fa-fw fa-bell"></i>Notifications</a>
+          <a href="help.html"><i class="fa fa-fw fa-binoculars"></i>Help</a>
           <a href="login.html"><i class="fa fa-fw fa-times"></i>Logout</a>
         </div>
         <div id="main">
@@ -51,15 +53,25 @@
                <p>
                  After logging in with your Saggezza GMail account using the Google SSO service, you will be presented with the Dashboard - your operations centre for managing expense reports. This dashboard consists of three main information boxes to give you a concise overview of the most immediately relevant information.
                </p>
-               <p>
-                 <b>Navigating the website</b> - from the dashboard, other pages can be accessed by clicking the relevant button on the side navigation panel. This navigation panel can also be collapsed if you wise to use the entire page to display information.
-               </p>
-               <p>
-                 <b>Pending receipts</b> - this gives you a rundown of receipts that have been submitted by your employees, now subject to your approval before being handed off to payroll management. At a glance you can see the receipt id, employee id, date of report and status of this report. These reports are ordered by date, ensuring that you see the newest reports as they appear.
-               </p>
-               <p>
-                 <b>Notifications</b> - to the right of the dashboard, these notifications alert you to the newest items requiring your attention, be they new pending receipts, or reminders of deadlines for payroll information. These notifications are also colour coded to allow you to quickly identify pertinent alerts and keep you up to speed with the latest updates.
-               </p>
+               <div class="box">
+                 <p>
+                   <b>Navigating the website</b> - from the dashboard, other pages can be accessed by clicking the relevant button on the side navigation panel. This navigation panel can also be collapsed if you wise to use the entire page to display information.
+                 </p>
+                 <img src="HelpImages\dashboard.png" class="sc" alt="Dashboard Navigation" />
+                 <br />
+               </div>
+               <div class="box">
+                 <p>
+                   <b>Pending receipts</b> - this gives you a rundown of receipts that have been submitted by your employees, now subject to your approval before being handed off to payroll management. At a glance you can see the receipt id, employee id, date of report and status of this report. These reports are ordered by date, ensuring that you see the newest reports as they appear.
+                 </p>
+                 <img src="HelpImages\pastreceipt.png" class="sc" alt="Pending Receipts" />
+               </div>
+               <div class="box">
+                 <p>
+                   <b>Notifications</b> - to the right of the dashboard, these notifications alert you to the newest items requiring your attention, be they new pending receipts, or reminders of deadlines for payroll information. These notifications are also colour coded to allow you to quickly identify pertinent alerts and keep you up to speed with the latest updates.
+                 </p>
+                 <img src="HelpImages\notification.png" class="sc" alt="Notifications" />
+               </div>
                <p>
                  <b>Receipts history</b> - found underneath the pending receipts section, this box gives you a rundown on reports that have been previously submitted and actioned, with an indication of whether they were approved or denied. As before this will give you at a glance information such as the employee id and date of submission for a given report. The status of the report is also colour coded to allow you to quickly identify a pertinent report.
                </p>
@@ -81,9 +93,12 @@
                <p>
                  In order to facilitate the expedient creation and submission of expense reports for your employees, a template system is provided. This gives a framework and structure for a report, allowing them to fill in the relevant information that you need to be able to approve and pay a report. Users of the app can also save previous reports and use them in the future so that repeat information does not need to be re-entered. This page gives you the ability to edit the fields of the template, allowing you to update it as the needs of the company change.
                </p>
-               <p>
-                 Once you navigate to this page, you will be presented with a list of columns that form an expense report. By clicking on one of these, you will be presented with a current list of options that a user creating a report on the app will be presented with. Here you can also select 'add new option' to create a new option for a given column, or click the small bin button to remove it.
-               </p>
+               <div class="box">
+                 <img src="HelpImages\edittemplate.png" class="sc" alt="Editing the Template" />
+                 <p>
+                   Once you navigate to this page, you will be presented with a list of columns that form an expense report. By clicking on one of these, you will be presented with a current list of options that a user creating a report on the app will be presented with. Here you can also select 'add new option' to create a new option for a given column, or click the small bin button to remove it.
+                 </p>
+               </div>
                <p>
                  As an example, if it became beneficial to have a category for Road Tolls seperate to the general Travel category, this could be created by clicking the 'Category' column, and entering this as a new field. Once you have made all of your changes, click the 'Confirm Changes' button at the bottom right of the screen. This will ask you to confirm once again, and then redirect you back to the initial Report Template page.
                </p>
