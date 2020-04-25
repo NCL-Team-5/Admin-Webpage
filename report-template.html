@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Report Template</title>
     <link rel="stylesheet" href="saggezza-style.css">
+    <link rel="stylesheet" href="report-template.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="nav-script.js"></script>
   </head>
@@ -13,12 +14,17 @@
         <div id="mySidenav" class="sidenav">
           <img src="resources\logo.png" class="logo"/>
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-          <a href="#"><i class="fa fa-fw fa-home"></i>Dashboard</a>
-          <a href="#"><i class="fa fa-fw fa-history"></i>Pending Receipts</a>
-          <a href="#"><i class="fa fa-fw fa-archive"></i>Receipt History</a>
-          <a href="#"><i class="fa fa-fw fa-search"></i>Report Template</a>
-          <a href="#"><i class="fa fa-fw fa-bell"></i>Notifications</a>
-          <a href="#"><i class="fa fa-fw fa-times"></i>Logout</a>
+          <p>Main</p>
+          <a href="home.html"><i class="fa fa-fw fa-home"></i>Dashboard</a>
+          <p>Receipts</p>
+          <a href="pending-receipts.html"><i class="fa fa-fw fa-history"></i>Pending Receipts</a>
+          <a href="receipts-history.html"><i class="fa fa-fw fa-archive"></i>Receipt History</a>
+          <p>Reports</p>
+          <a href="report-template.html"><i class="fa fa-fw fa-search"></i>Report Template</a>
+          <p>Other</p>
+          <a href="notifications.html"><i class="fa fa-fw fa-bell"></i>Notifications</a>
+          <a href="help.html"><i class="fa fa-fw fa-binoculars"></i>Help</a>
+          <a href="login.html"><i class="fa fa-fw fa-times"></i>Logout</a>
         </div>
         <div id="main">
           <nav>
@@ -32,9 +38,70 @@
           <main>
             <header>
               <p>
-                Hello, welcome %NAME<div class="right">Dashboard / Receipt History</div>
+                Hello, welcome %NAME<div class="right">Dashboard / Report Template</div>
               </p>
-           </header>
+            </header>
+            <section id="columns">
+              <h2>Report Template</h2>
+              <table>
+                <tr>
+                  <th>Date</th>
+                  <th>Receipt</th>
+                  <th>Description</th>
+                  <th>Category</th>
+                  <th>Client Name or Saggezza</th>
+                  <th>Client Project</th>
+                  <th>Billable to Client?</th>
+                  <th>Payment Method</th>
+                  <th>Amount GBP</th>
+                  <th>Amount USD</th>
+                  <th>Amount EUR</th>
+                </tr>
+              </table>
+            </section>
+            <section id="dropdowns">
+              <div class="option">
+                <label for="reciept">Reciept</label>
+                <br />
+                <select id="reciept">
+                  <option value="yes-hardCopy">Yes - Hard Copy</option>
+                  <option value="yes-softCopy">Yes - Soft Copy</option>
+                  <option value="no">No - No Receipt</option>
+                </select>
+              </div>
+
+              <div class="option">
+                <label for="category">Category</label>
+                <br />
+                <select id="category">
+                  <option value="employeeRewards">Employee rewards</option>
+                  <option value="consumables">Consumables</option>
+                  <option value="generalOfficeExpenses">General Office Expenses</option>
+                  <option value="generalTravel-acomodation">General Travel: Accomodation</option>
+                  <option value="generalTravel-travel">General Travel: Travel</option>
+                  <option value="generalTravel-subsistence">General Travel: Subsistence</option>
+                  <option value="salesEntertaining">Sales Entertaining</option>
+                  <option value="staffEntertaining">Staff Entertaining</option>
+                  <option value="recruitmentFees">Recruitment Fees</option>
+                  <option value="visaAndImagration">Visa and Imagration</option>
+                  <option value="softwareAndIT">Software and IT</option>
+                  <option value="staffTraining">Staff Training</option>
+                  <option value="stationaryAndOfficeSupplies">Stationary and Office Supplies</option>
+                  <option value="telephoneAndConference">Telephone and Conference</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div class="option">
+                <label for="cleintNameOrSaggezza">Client Name or Saggezza</label>
+                <br />
+                <select id="clientNameOrSaggezza">
+                  <option value="saggezzaUK">Saggezza UK</option>
+                  <option value="saggezzaUS">Saggezza US</option>
+                  <option value="client">Client</option>
+                </select>
+              </div>
+            </section>
           </main>
     </div>
   </body>
