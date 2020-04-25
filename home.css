@@ -33,10 +33,12 @@
 }
 
 #myTable th{
+  /*Adds a white background to the header of the tables*/
   background-color: white;
 }
 
 section{
+  /*The white square backgrounds to show each different section of the dashboard*/
   float: left;
   background-color: white;
   width: 48%;
