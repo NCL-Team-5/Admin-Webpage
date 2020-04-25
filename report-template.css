@@ -1,0 +1,28 @@
+section{
+    float: left;
+    background-color: white;
+    width: 98%;
+    margin: 10px;
+    padding: 5px;
+    position: static;
+}
+
+table {
+    border-spacing: 50px;
+}
+
+.option {
+    background-color: #00ADFF;
+    float: left;
+    width: 32%;
+    margin: 10px;
+}
+
+label {
+    font-size: 35px;
+    color: white;
+}
+
+select {
+    font-size: 35px;
+}

@@ -1,3 +1,7 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 /* The side navigation menu */
 .sidenav {
   height: 100%; /* 100% Full-height */
@@ -16,7 +20,7 @@
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 18px;
   color: #C7C6D0;
   display: block;
   transition: 0.3s;
@@ -25,6 +29,12 @@
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
   color: #f1f1f1;
+}
+
+.sidenav p {
+  color: #5F6482;
+  font-size: 14px;
+  margin-left: 40px;
 }
 
 /* Position and style the close button (top right corner) */
@@ -116,20 +126,6 @@
   color: black;
 }
 
-.sidePannelNew {
-  height: 100%;
-  float: left;
-  width: 10px;
-  background-color: aqua;
-}
-
-.sidePannelDeadline {
-  height: 100%;
-  float: left;
-  width: 10px;
-  background-color: #DA007E;
-}
-
 .notificationBox p {
   text-align: center;
 }
@@ -152,4 +148,8 @@
 
 .deadlineBox i {
   color: #DA007E;
+}
+
+#main h2{
+  font-size: 18px;
 }

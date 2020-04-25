@@ -4,34 +4,81 @@
     <meta charset="utf-8">
     <title>Notifications</title>
     <link rel="stylesheet" href="saggezza-style.css">
+    <link rel="stylesheet" href="notifications.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!--<script src="script.js"></script>-->
+    <script src="nav-script.js"></script>
+    <script src="notification.js"></script>
   </head>
   <body>
     <div id='page'>
-      <nav>
-
-      </nav>
       <div id="mySidenav" class="sidenav">
         <img src="resources\logo.png" class="logo"/>
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <p>Main</p>
         <a href="home.html"><i class="fa fa-fw fa-home"></i>Dashboard</a>
+        <p>Receipts</p>
         <a href="pending-receipts.html"><i class="fa fa-fw fa-history"></i>Pending Receipts</a>
         <a href="receipts-history.html"><i class="fa fa-fw fa-archive"></i>Receipt History</a>
+        <p>Reports</p>
         <a href="report-template.html"><i class="fa fa-fw fa-search"></i>Report Template</a>
+        <p>Other</p>
         <a href="notifications.html"><i class="fa fa-fw fa-bell"></i>Notifications</a>
         <a href="help.html"><i class="fa fa-fw fa-binoculars"></i>Help</a>
         <a href="login.html"><i class="fa fa-fw fa-times"></i>Logout</a>
       </div>
-      <main>
-        <header>
-          <p>
-            Hello, welcome %NAME
-          </p>
-          <p>
-            Dashboard / Notifications
-          </p>
-        </header>
+      <div id="main">
+        <nav>
+          <div class="navbar">
+            <a href="#" class="left"><span onclick="openNav()">&#9776;</span></a>
+            <a href="#" class="right">%NAME</a>
+            <a href="#" class="right"><i class="fa fa-fw fa-envelope"></i></a>
+            <a href="#" class="right"><i class="fa fa-fw fa-bell"></i></a>
+          </div>
+        </nav>
+        <main>
+          <header>
+            <p>
+              Hello, welcome %NAME<span class="right">Dashboard / Notifications</span>
+            </p>
+         </header>
+         <section id='notifications'>
+          <h2>Notifications</h2>
+          <div class="notificationBox">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+            <h3><i class="fa fa-fw fa-bell"></i>New Pending Reciept</h3>
+            <p>Reciept needs approval</p>
+          </div>
+          <div class="deadlineBox">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+            <h3><i class="fa fa-fw fa-bell"></i>Receipt Deadline</h3>
+            <p>Deadline in 2 weeks</p>
+          </div>
+          <div class="notificationBox">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+            <h3><i class="fa fa-fw fa-bell"></i>New Pending Reciept</h3>
+            <p>Reciept needs approval</p>
+          </div>
+          <div class="deadlineBox">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+            <h3><i class="fa fa-fw fa-bell"></i>Receipt Deadline</h3>
+            <p>Deadline in 2 weeks</p>
+          </div>
+          <div class="notificationBox">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+            <h3><i class="fa fa-fw fa-bell"></i>New Pending Reciept</h3>
+            <p>Reciept needs approval</p>
+          </div>
+          <div class="deadlineBox">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+            <h3><i class="fa fa-fw fa-bell"></i>Receipt Deadline</h3>
+            <p>Deadline in 2 weeks</p>
+          </div>
+          <div class="notificationBox">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+            <h3><i class="fa fa-fw fa-bell"></i>New Pending Reciept</h3>
+            <p>Reciept needs approval</p>
+          </div>
+        </section>
       </main>
     </div>
   </body>
