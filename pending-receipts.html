@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!--
+    Page shows a table containing the infromation about receipts which have been submitted but have not been processed yet
+    Authors: Joseph Smith, Tom Clayton
+  -->
   <head>
     <meta charset="utf-8">
     <title>Pending Receipts</title>
     <link rel="stylesheet" href="saggezza-style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="pending-receipts.css">
-    <!--<script src="script.js"></script>-->
+    <script src="table.js"></script>
+    <script src="nav-script.js"></script>
   </head>
   <body>
     <div id='page'>
@@ -56,45 +61,24 @@
                 <td>01/01/01</td>
                 <td>Done</td>
               </tr>
+              <tr>
+                <td>4289</td>
+                <td>4289</td>
+                <td>01/01/01</td>
+                <td>Rejected</td>
+              </tr>
+              <tr>
+                <td>4258</td>
+                <td>4258</td>
+                <td>01/01/01</td>
+                <td>Done</td>
+              </tr>
             </table>
 
           </section>
           
         </main>
       </div>
-      <script>
-        function openNav() {
-          document.getElementById("mySidenav").style.width = "250px";
-          document.getElementById("main").style.marginLeft = "250px";
-        }
-        
-        function closeNav() {
-          document.getElementById("mySidenav").style.width = "0";
-          document.getElementById("main").style.marginLeft= "0";
-        }
-
-        function myFunction() {
-        // Declare variables
-        var input, filter, table, tr, td, i, txtValue;
-        input = document.getElementById("myInput");
-        filter = input.value.toUpperCase();
-        table = document.getElementById("myTable");
-        tr = table.getElementsByTagName("tr");
-
-        // Loop through all table rows, and hide those who don't match the search query
-        for (i = 0; i < tr.length; i++) {
-          td = tr[i].getElementsByTagName("td")[0];
-          if (td) {
-            txtValue = td.textContent || td.innerText;
-            if (txtValue.toUpperCase().indexOf(filter) > -1) {
-             tr[i].style.display = "";
-            } else {
-             tr[i].style.display = "none";
-            }
-          }
-        }
-      }
-      </script>
     </div>
   </body>
 </html>
