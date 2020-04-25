@@ -1,3 +1,5 @@
+/* Specific styling for the pending receipts page. Author: Joe Smith */
+
 #myInput {
     background-image: url('/css/searchicon.png'); /* Add a search icon to input */
     background-position: 10px 12px; /* Position the search icon */
@@ -8,33 +10,33 @@
     border: 1px solid #ddd; /* Add a grey border */
     margin-bottom: 12px; /* Add some space below the input */
   }
-  
+
   #myTable {
     border-collapse: collapse; /* Collapse borders */
     width: 100%; /* Full-width */
     border: 1px solid #ddd; /* Add a grey border */
     font-size: 18px; /* Increase font-size */
   }
-  
+
   #myTable th, #myTable td {
     text-align: left; /* Left-align text */
     padding: 12px; /* Add padding */
   }
-  
+
   #myTable tr {
     /* Add a bottom border to all table rows */
     border-bottom: 1px solid #ddd;
   }
-  
+
   #myTable tr.tableHeader, #myTable tr:hover {
     /* Add a grey background color to the table header and on hover */
     background-color: #f1f1f1;
   }
-  
+
   #myTable th{
     background-color: white;
   }
-  
+
   section{
     float: left;
     background-color: white;
@@ -43,12 +45,12 @@
     padding: 5px;
     position: static;
   }
-  
+
   .notificationBox{
     width: 30%;
     height: 137px;
   }
-  
+
   #main h2{
     font-size: 18px;
   }
